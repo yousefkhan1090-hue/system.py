@@ -335,7 +335,7 @@ Return raw JSON only:
 
 def parse_input_groq(text_input, audio_bytes, currency, file_filename="voice.webm"):
     try:
-        client = Groq(api_key=GROQ_API_KEY)
+        client = Groq(api_key=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)
         today_str = datetime.now().strftime("%Y-%m-%d")
         
         if audio_bytes:
@@ -364,7 +364,7 @@ def parse_input_groq(text_input, audio_bytes, currency, file_filename="voice.web
 
 def ask_advisor_groq(question, df, currency):
     try:
-        client = Groq(api_key=GROQ_API_KEY)
+        client = Groq(api_key=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)
         context = df.to_string()
         prompt = f"You are a high-level personal financial advisor. Analyze these transaction records:\n{context}\n\nUser Question: {question}\nProvide concise, high-value financial recommendations using currency {currency}."
         response = client.chat.completions.create(
