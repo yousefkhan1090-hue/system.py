@@ -12,7 +12,7 @@ import streamlit.components.v1 as components
 # ---------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------
-GROQ_API_KEY = "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"
+GROQ_API_KEY = "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"
 
 DATA_FILE = "expenses.csv"
 BUDGET_FILE = "budget.txt"
